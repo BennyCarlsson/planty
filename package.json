@@ -1,0 +1,24 @@
+{
+  "name": "planty",
+  "version": "1.0.0",
+  "description": "remember to water your plant",
+  "main": "main.js",
+  "author": "benny carlsson",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.0"
+  },
+  "devDependencies": {
+    "electron": "^34.2.0",
+    "electron-builder": "^23.0.0"
+  },
+  "build": {
+    "appId": "com.bennycarlsson.planty",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  }
+}
