@@ -17,12 +17,24 @@ app.on("ready", () => {
   });
 
   const icons = [
-    nativeImage.createFromPath(path.join(__dirname, "icon1.png")).resize({ width: 16, height: 16 }),
-    nativeImage.createFromPath(path.join(__dirname, "icon2.png")).resize({ width: 16, height: 16 }),
-    nativeImage.createFromPath(path.join(__dirname, "icon3.png")).resize({ width: 16, height: 16 }),
-    nativeImage.createFromPath(path.join(__dirname, "icon4.png")).resize({ width: 16, height: 16 }),
-    nativeImage.createFromPath(path.join(__dirname, "icon5.png")).resize({ width: 16, height: 16 }),
-    nativeImage.createFromPath(path.join(__dirname, "icon6.png")).resize({ width: 16, height: 16 }),
+    nativeImage
+      .createFromPath(path.join(__dirname, "white-icon1.png"))
+      .resize({ width: 16, height: 16 }),
+    nativeImage
+      .createFromPath(path.join(__dirname, "white-icon2.png"))
+      .resize({ width: 16, height: 16 }),
+    nativeImage
+      .createFromPath(path.join(__dirname, "white-icon3.png"))
+      .resize({ width: 16, height: 16 }),
+    nativeImage
+      .createFromPath(path.join(__dirname, "white-icon4.png"))
+      .resize({ width: 16, height: 16 }),
+    nativeImage
+      .createFromPath(path.join(__dirname, "white-icon5.png"))
+      .resize({ width: 16, height: 16 }),
+    nativeImage
+      .createFromPath(path.join(__dirname, "white-icon6.png"))
+      .resize({ width: 16, height: 16 }),
   ];
 
   tray = new Tray(icons[0]);
